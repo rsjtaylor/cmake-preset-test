@@ -6,6 +6,9 @@ jobs:
     steps:
     - uses: actions/checkout@v2
 
+    # Install latest CMake.
+    - uses: lukka/get-cmake@latest
+
     - name: cmake version
       run: cmake --version
     - name: cmake list presets
